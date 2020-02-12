@@ -21,10 +21,39 @@
       <a href="#">Корзина</a>
     </header>
     <main>
-      <p><a href="#">Главная</a>  »  <a href="#">Каталог</a>  »  <a href="#">Сливочное</a></p>
-      <p>С 10 до 20, ежедневно</p>
-      <a href="tel:8 812 450-25-25">8 812 450-25-25</a>
+      <div>
+        <p><a href="#">Главная</a>  »  <a href="#">Каталог</a>  »  <a href="#">Сливочное</a></p>
+        <p>С 10 до 20, ежедневно <a href="tel:8 812 450-25-25">8 812 450-25-25</a></p>
+      </div>
       <h2>Сливочное мороженое</h2>
+      <div>
+        <form class="" action="index.html" method="post">
+          <label for="sort">Сортировка:</label>
+          <select class="sort" name="sort" id="sort">
+            <option value="по популярности">по популярности</option>
+        </select>
+        <label for="price">Цена: 100 руб. – 500 руб.</label>
+        <input id="price" type="range" min="100" max="500" step="1" value="50">
+
+        <label for="fat_content">Жирность:</label>
+        <ul>
+          <li><input type="radio" name="fatnes" value="0" id="fat_content">0%</li>
+          <li><input type="radio" name="fatnes" value="10" id="fat_content">до 10%</li>
+          <li><input type="radio" name="fatnes" value="30" id="fat_content">до 30%</li>
+          <li><input type="radio" name="fatnes" value="30" id="fat_content">выше 30%</li>
+        </ul>
+
+        <label for="toppings">Наполнители:</label>
+        <ul>
+          <li><input type="checkbox" name="toppings" value="" id="toppings">шоколадные</li>
+          <li><input type="checkbox" name="toppings" value="" id="toppings">сахарные присыпки</li>
+          <li><input type="checkbox" name="toppings" value="" id="toppings">фрукты</li>
+          <li><input type="checkbox" name="toppings" value="" id="toppings">сиропы</li>
+          <li><input type="checkbox" name="toppings" value="" id="toppings">джемы</li>
+        </ul>
+        <button type="submit" name="button">Применить</button>
+      </form>
+      </div>
       <ul>
         <li>
           <a href="#">
@@ -110,7 +139,13 @@
             <p>Сливочное с мятным сиропом</p>
           </a>
         </li>
-
+      </ul>
+      <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
       </ul>
     </main>
     <footer>
