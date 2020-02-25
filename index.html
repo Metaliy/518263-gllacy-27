@@ -8,24 +8,57 @@
   <body>
 
     <header>
-      <img src="img/logo.svg" alt="gllacy" width="154px" height="64px">
+      <img src="img/logo.svg" alt="Логотип Глейси" width="154" height="64">
       <nav>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a>
+            <ul>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лёд</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
       </nav>
       <div>
-        <a href="#"><img src="img/loupe.svg" alt=""></a>
-        <a href="#"><img src="img/entrance-white.svg" alt="entrance">Вход</a>
-        <a href="#"><img src="img/basket.svg" alt="shopcart">Корзина</a>
+        <button type="button" name="button"> <img src="img/loupe.svg" alt="поиск"> </button>
+        <div class="">
+          <form class="" action="index.html" method="get">
+            <label for="search" class="visually-hidden">Поиск</label>
+              <input type="search" name="search" value="" placeholder="Что ищем?" id="search" required>
+          </form>
+        </div>
+        <button type="button" name="button"> <img src="img/entrance-white.svg" alt="entrance">Вход</button>
+        <div>
+          <form class="" action="index.html" method="post">
+            <ul>
+              <li>
+                <label for="login_email" class="visually-hidden">Емейл</label>
+                <input type="email" name="email" value="" placeholder="email@example.com" id="login_email" required>
+              </li>
+              <li>
+                <label for="password" class="visually-hidden">Пароль</label>
+                <input type="password" name="password" value="" placeholder="••••••••" id="password" required>
+              </li>
+            </ul>
+            <button type="submit" name="button">Войти</button>
+          </form>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </div>
+        <button type="button" name="button"><img src="img/basket.svg" alt="корзина">
+
+        </button>
       </div>
     </header>
 
     <main>
       <section>
-        <h1>Магазин мороженного &laquo;Gllacy&raquo;</h1>
+        <h1 class="visually-hidden">Магазин мороженного &laquo;Gllacy&raquo;</h1>
         <div>
           <p>С 10 до 20, ежедневно <a href="tel:8 812 450-25-25">8 812 450-25-25</a></p>
         </div>
@@ -39,26 +72,26 @@
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
         </div>
-        <button type="button" name="button">Хочу варенье!</button>
+        <a href="#">Хочу варенье!</a>
         <div>
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button type="button" name="button">Хочу шоколадки!</button>
+          <a href="#">Хочу шоколадки!</a>
         </div>
         <ul>
           <li>
             <a href="#">
               <img src="img/hit.svg" alt="hit">
-              <img src="img/icecream-cat-1.png" alt="icecream-1" width="267px" height="267px">
+              <img src="img/icecream-cat-1.png" alt="icecream-1" width="267" height="267">
               <p>310₽/кг</p>
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
           </li>
           <li>
             <li>
               <a href="#">
                 <img src="img/hit.svg" alt="hit">
-                <img src="img/icecream-cat-2.png" alt="icecream-2" width="267px" height="267px">
+                <img src="img/icecream-cat-2.png" alt="icecream-2" width="267" height="267">
                 <p>380₽/кг</p>
                 <h3>Сливочно-кофейное с кусочками шоколада</h3>
               </a>
@@ -66,7 +99,7 @@
             <li>
               <a href="#">
                 <img src="img/hit.svg" alt="hit">
-                <img src="img/icecream-cat-3.png" alt="icecream-3" width="267px" height="267px">
+                <img src="img/icecream-cat-3.png" alt="icecream-3" width="267" height="267">
                 <p>355₽/кг</p>
                 <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
               </a>
@@ -74,7 +107,7 @@
             <li>
               <a href="#">
                 <img src="img/hit.svg" alt="hit">
-                <img src="img/icecream-cat-4.png" alt="icecream-4" width="267px" height="267px">
+                <img src="img/icecream-cat-4.png" alt="icecream-4" width="267" height="267">
                 <p>415₽/кг</p>
                 <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               </a>
@@ -82,16 +115,16 @@
         </ul>
       </section>
       <section>
-          <h2>О компании</h2>
+          <h2 class="visually-hidden">О компании</h2>
             <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
           <div>
-            <img src="img/ice-cream.svg" alt="ice-cream" width="49px" height="49px">
+            <img src="img/ice-cream.svg" alt="ice-cream" width="49" height="49">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            <img src="img/cow.svg" alt="cow" width="49px" height="49px">
+            <img src="img/cow.svg" alt="cow" width="49" height="49">
             <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            <img src="img/eco.svg" alt="eco" width="49px" height="49px">
+            <img src="img/eco.svg" alt="eco" width="49" height="49">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-            <img src="img/thermometer.svg" alt="thermometer" width="49px" height="49px">
+            <img src="img/thermometer.svg" alt="thermometer" width="49" height="49">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </div>
           <article class="">
@@ -104,8 +137,9 @@
             <p>
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
-            <form action="">
-              <input type="email" name="mail" value="">
+            <form action="index.html" method="get">
+              <label for="email-follow" class="visually-hidden"></label>
+              <input type="email" name="mail" value="" placeholder="Электронная почта" id="email-follow">
               <button type="submit" name="button">Отправить</button>
             </form>
           </div>
@@ -117,15 +151,36 @@
             <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
             <p>Для заказов по телефону:</p>
             <p><a href="tel:8 812 450-25-25">8 812 450-25-25</a> <br>(С 10 до 20, ежедневно)</p>
+            <button type="button" name="button">Форма обратной связи</button>
+            <div class="">
+              <h3>Мы обязательно вам ответим</h3>
+              <form class="" action="index.html" method="post">
+                <ul>
+                  <li>
+                    <label for="name_lastname" class="visually-hidden">Имя фамилия</label>
+                    <input type="text" name="name_lastname" value="" placeholder="Имя Фамилия" id="name_lastname">
+                  </li>
+                  <li>
+                    <label for="feedback_email" class="visually-hidden">email</label>
+                    <input type="email" name="feedback_email" value="" placeholder="email@example.com" id="feedback_email">
+                  </li>
+                  <li>
+                    <label for="comment_area" class="visually-hidden">поле ввода текста</label>
+                    <textarea name="name" rows="8" cols="80" placeholder="В свободной форме" id="comment_area"></textarea>
+                  </li>
+                </ul>
+                <button type="submit" name="button">Отправить</button>
+              </form>
+            </div>
           </div>
         </section>
       </main>
       <footer>
         <ul>
-          <li><a href="#"><<img src="img/twitter.svg" alt="twitter" width="38px" height="38px">Твиттер</a></li>
-          <li><a href="#"><img src="img/instagram.svg" alt="instagram" width="38px" height="38px">Инстаграм</a></li>
-          <li><a href="#"><img src="img/fb.svg" alt="facebook" width= "38px" height="38px">Фейсбук</a></li>
-          <li><a href="#"><img src="img/vk.svg" alt="vk" width="38px" height="38px">Вконтакте</a></li>
+          <li><a href="#"><img src="img/twitter.svg" alt="" width="38" height="38">Твиттер</a></li>
+          <li><a href="#"><img src="img/instagram.svg" alt="" width="38" height="38">Инстаграм</a></li>
+          <li><a href="#"><img src="img/fb.svg" alt="" width= "38" height="38">Фейсбук</a></li>
+          <li><a href="#"><img src="img/vk.svg" alt="" width="38" height="38">Вконтакте</a></li>
         </ul>
         <ul>
           <li><a href="#"><img src="img/heart.svg" alt="heart">Для поставщиков</a></li>
@@ -135,7 +190,7 @@
         </ul>
         <div class="">
           <a href="#">
-            <img src="img/logo-htmlacademy.svg" alt="logo-academ" width="108px" height="39px">
+            <img src="img/logo-htmlacademy.svg" alt="logo-academ" width="108" height="39">
             <p>Сделано в HTML Academy © 2019</p>
           </a>
         </div>
